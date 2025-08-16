@@ -1,0 +1,1230 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+.home{
+    width: 100%;
+    height: 600px;
+    background-image: url(image/home_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    border-radius:0px 0px 24px 24px ;
+}
+nav.sticky{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav_logo img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+.nav_link ul{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    list-style:none;
+    font-family: "Averia Serif Libre", serif;
+    
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav button{
+    border: none;
+    border-radius:1000px;
+    padding: 5px 20px;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 20px;
+    background-color: #00A9FF;
+}
+nav a:hover{
+    color: #00A9FF;
+}
+
+nav button:hover{
+    background-color: white;
+    color: #00A9FF;
+}
+.menu_bar{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.drop_down{
+    display: none;
+    position: fixed;
+    margin-left: 5%;
+    margin-right: 5%;
+    top: 60px;
+    width: 90%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.drop_down.open{
+    
+    height: auto;
+}
+.drop_down li{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap:40px;
+    list-style:none;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 15px;
+}
+.drop_down a{
+    text-decoration: none;
+    color: white;
+}
+.drop_down button{
+    border: none;
+    border-radius:1000px;
+    padding: 5px 20px;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 15px;
+    background-color: #00A9FF;
+    cursor: pointer;
+}
+.drop_down button:hover{
+    color: white;
+    background-color: blue;
+}
+.home_content{
+    text-align: center;
+    width: 100%;
+    height: 545px;
+    padding-top: 162px;
+    margin-bottom: auto;
+}
+.home_content h2{
+    font-family: "Bree Serif", serif;
+    font-size: 32px;
+    color:white;
+    line-height: 40px;
+    font-weight:300;
+}
+.home_content h1{
+    font-family: "Bree Serif", serif;
+    font-size: 96px;
+    color: #00A9FF;
+    line-height: 40px;
+    font-weight:300;
+}
+.home_content h4{
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    font-weight:300;
+}
+.services{
+    width: 100%;
+    height: auto;
+    background-color: #CDF5FD;
+    padding-bottom: 60px;
+    
+}
+.services h2{
+    font-size: 32px;
+    padding-top: 30px;
+    font-family: "Calistoga", serif;
+    text-align: center;
+    
+}
+.services_card{
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 66px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.card{
+    width: 350px;
+    height:230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 5px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.card h3{
+    color: white;
+    font-size: 32px;
+}
+.card h3:hover{
+    color: #00A9FF;
+    font-size: 32px;
+}
+.card p{
+    color: white;
+    font-size: 12px;
+}
+.card1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/adventure.jpg)
+}
+.card2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/tour\ guide.jpg);
+}
+.card3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/camping.jpg);
+}
+.card4{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/fire\ camp.jpg);
+}
+.card5{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/off\ road.jpg);
+}
+.card6{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/trekking.jpg);
+}
+.services_card_mobile{
+    display: none;
+}
+.services_card_tablet{
+    display: none;
+}
+
+.about{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDF5FD;
+    gap: 56px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.about img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px 0 20px 0;
+}
+.about_text{
+    width: 584px;
+    height: 312px;
+    padding-top: 80px;
+}
+.about_text h2{
+    text-align: center;
+    font-family: "Calistoga", serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.about_text h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Armata";
+    text-align: left;
+    text-justify: auto;
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 20px;
+}
+.about_text button{
+    background-color: #00A9FF;
+    border-radius: 16px;
+    width: 178px;
+    height: 46px;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.about_text button:hover{
+    background-color: blue;
+    color:white;
+}
+.package{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-color: #CDF5FD;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    
+}
+.package h1{
+    font-size: 32px;
+    font-family: "Calistoga", serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.package img{
+    height: 266px;
+    width: 325px;
+    border-radius: 20px;
+    margin: 13px;
+}
+.package_card {
+    width: 351px;
+    height: auto;
+    background-color: white;
+    border-radius: 36px;
+    
+}
+.package_card_info{
+    text-align: left;
+    margin-left:13px;
+    margin-right:13px;
+    height: auto;
+
+}
+.package_card_info h2{
+    font-family: "Bree Serif";
+    font-size: 32;
+    text-decoration: underline;
+    
+}
+.package_card_info h4{
+    font-family: "Kreon";
+    font-size: 15PX;
+    font-weight: 300;
+    line-height: 25px;
+    text-justify: auto;
+}
+.package_card_price{
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.package_card_price_text{
+    text-align: center;
+}
+.package_card_price_text h3{
+    font-family:"Kreon";
+    font-size: 24px;
+
+}
+.package_card_price_text h2{
+    font-family:"Lemon";
+    font-size: 32px;
+    color: #FF0000;
+    
+}
+.package_cards button{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00A9FF;
+    border: none;
+    margin-top: 17px;
+    font-family: "kreon";
+    font-size: 20px;
+    cursor: pointer;
+}
+.package_cards button:hover{
+    color: white;
+    background-color: blue;
+}
+.package_cards{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 50px;
+}
+.see_more{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.see_more button{
+    font-family:"kreon";
+    font-size: 32px;
+    border-radius: 1000px;
+    border: none;
+    height: 53px;
+    width: 218px;
+    background-color: #00A9FF;
+    cursor: pointer;
+}
+.see_more button:hover{
+    color: white;
+    background-color: blue;
+}
+.footer{
+    width: 100%;
+    height: 280px;
+    background-color: #071952;
+
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+.link h2{
+    font-family: "Crimson Pro";
+    font-size:20px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+.link ul{
+    list-style: none;
+    color: white;
+     font-family: "Bellefair";
+     font-size: 15px;
+     line-height: 25px;
+     margin-bottom: 20px;
+     cursor: pointer;
+}
+.link a{
+    
+    text-decoration: none;
+    color: white;
+}
+.link_list i{
+    margin-right: 10px;
+} 
+.copyright hr{
+    width: 80%;
+    margin: 20px auto;
+}
+.copyright p{
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+    color: white;
+
+}
+.copyright span{
+    color: #00A9FF;
+}
+
+.about_more_header{
+    width: 100%;
+    height: 400px;
+    background-image: url(image/about\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about_title h2{
+    font-family: "Bree Serif", serif;
+    font-size: 90px;
+    color:white;
+    font-weight:300;
+    text-align: center;
+    padding-top: 120px;
+}
+.mvt_card{
+    height:auto;
+    width: 400px;
+    text-align: center;
+    background-image: url(image/mision\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.mvt_card img{
+    height: 102px;
+    width: 102px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.mvt_card h2{
+    margin-top: 5px;
+    font-family:"Calistoga";
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.mvt_card p{
+    font-family: "Average";
+    font-size: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.mvt_cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:68px;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #CDF5FD;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 50px;
+    
+}
+.about_image_circle{
+    width: 100%;
+    height: 431px;
+    background-color: #CDF5FD;
+    padding-top: 10px;
+}
+.about_image_circle img{
+    width: 411px;
+    height: 411px;
+    border-radius: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_why{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #CDF5FD;
+}
+.about_why_card{
+    width: 640px;
+    height: auto;
+    margin: 20px;
+    border:5px solid #00A9FF;
+    border-radius: 40px 16px;
+}
+.about_why_card h1{
+    text-align: center;
+    font-family:"Calistoga";
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about_why ul{
+    margin-left: 25px;
+    font-family: "Average";
+    line-height: 28px;
+}
+.about_why_card span{
+    font-family: "Averia Serif Libre";
+    font-weight:500;
+}
+
+.package_home {
+    width: 100%;
+    height:400px;
+   
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/package_bg.jpg);   
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+}
+.package_home h1{
+    color: white;
+    font-family: "Bree Serif", serif;
+    font-size: 90px;
+    font-weight:300;
+    text-align: center;
+    padding-top: 120px;
+    text-transform: uppercase;
+}
+.package_home p{
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    font-weight:300;
+}
+.package_more_cards{
+    width: 100%;
+    height: auto;
+    background-color: #CDF5FD;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 3%;
+ 
+}
+.one{
+    border-color:#00A9FF;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: white;
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    margin-top: 40px;
+    
+}
+.one img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    width:230px;
+    height:180px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+.one h3{
+    margin: 5px;
+    text-decoration: underline;
+}
+.line h3{
+    font-family:"Kreon";
+    font-size: 24px;
+    text-decoration: none;
+}
+.line h2{
+    color: red;
+    font-family: Georgia, serif;
+    }
+.one p{
+    height: 320px;
+    font-family: "Kreon";
+    font-size: 15PX;
+    font-weight: 300;
+    line-height: 25px;
+    text-justify: distribute-all-lines;
+    text-align: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+
+}
+.one a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.one button {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00A9FF;
+    border: none;
+    font-family: "kreon";
+    font-size: 20px;
+    cursor: pointer;                                                            
+    padding: 10px 30px;
+}
+
+.one button:hover{
+    color: white;
+    background-color: blue;
+
+}
+.package_card_footer{
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: auto;
+    background-color: #CDF5FD;
+    border-radius: 25px;
+}
+
+.booking_home{
+    width: 100%;
+    height:400px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(image/booking_bg.jpg);   
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+}
+.booking_home h1{
+    font-family: "Bree Serif", serif;
+    color: white;
+    font-size: 90px;
+    font-weight:300;
+    text-align: center;
+    padding-top: 120px;
+}
+.booking_home p{
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+    color: white;
+    line-height: 20px;
+    font-weight:300;
+}
+.booking{
+    width: 100%;
+    height: auto;
+    background-color: #CDF5FD;
+    padding-bottom: 40px;
+}
+.booking h2{
+    font-size: 24px;
+    font-family: "Kreon";
+    margin: 20px 0px;
+    text-decoration: underline;
+
+}
+.booking label{
+    font-family:"Bree Serif";
+}
+.booking :placeholder-shown{
+    font-style: italic;
+}
+
+#booking_form{
+    padding: 20px;   
+}
+.booking_input_boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.input_box{
+    flex: 1 1 41rem;
+}
+
+.input_box input{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    font-size: 15px;
+    text-transform: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.input_box select{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    font-size: 15px;
+    text-transform: none;
+}
+.sub_but{
+
+    display: flex;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    font-family:"Bree Serif";
+    border-radius: 10px;
+    background-color: #00A9FF;
+    border: none;
+    padding:5px 30px;
+}
+.sub_but:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+@media (max-width: 575.98px){
+    .nav_link ul{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .drop_down{
+        display: block;
+    }
+    .home_content h2{
+        font-size: 20px;
+        line-height: 15px;
+        font-weight:200;
+    }
+    .home_content h1{
+        font-size: 48px;
+        line-height: 15px;
+        font-weight:300;
+    }
+    .home_content h4{
+        font-size: 10px;
+        line-height: 15px;
+        font-weight:150;
+    }
+    .services h2{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+   
+    .services_card_mobile{
+        display: block;
+        margin-top: 20px;
+    }
+    .services_card_col1{
+        display:block;
+        justify-content:center;
+        margin-top: 20px;
+       
+    }
+    .card{
+        width: 50%;
+        height:150px;
+        display: block;
+        gap: 20px;
+        justify-content: center;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 0px;
+        
+      
+        
+    }
+    .card h3{
+        text-align: center;
+        font-size: 32px;
+    }
+    .card p{
+        display: none;
+    }
+    .about{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .about img{
+        display: none;
+    }
+    .about_text{
+        padding-top: 0px;
+    }
+    .about_text h2{
+        font-size: 20px;
+    }
+    .about_text h3{
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+    .about_text button{
+        width: 24%;
+        font-size: 15px;
+        height: 30px;
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    .package{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .package h1{
+        font-size: 20px;
+    }
+    .package_cards{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    
+    }
+    .package_card{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .see_more{
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .see_more button{
+        font-family:"kreon";
+        font-size: 20px;
+        border-radius: 1000px;
+        border: none;
+        height: 53px;
+        width: 120px;
+        background-color: #00A9FF;
+    }
+    .footer{
+        height: auto;
+        padding-top: 10px;
+        padding-bottom:20px ;
+    }
+    .links{
+        display: block;
+        justify-content: center;
+        gap: 250px;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .link h2{
+        font-size:16px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 0px;
+
+    }
+    .link ul{
+         font-size: 12px;
+         text-align: center;
+    }
+    
+    .link_list i{
+        margin-right: 0px;
+    } 
+    .copyright p{
+        font-size: 15px;
+    }
+    .about_more_header{
+        height: 100hv;
+    }
+    .about_title h2{
+        font-size: 60px;
+        font-weight:300;
+    }
+    .mvt_card{
+        height:auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .mvt_card img{
+        height: 60px;
+        width: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .mvt_card h2{
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .mvt_card p{
+        font-family: "Average";
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mvt_cards{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+    }
+    .about_image_circle{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .about_image_circle img{
+        width: 250px;
+        height: 250px;
+    }
+    .about_why{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .about_why_card{
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        border:5px solid #00A9FF;
+        border-radius: 40px 16px;
+    }
+    .about_why_card h1{
+        text-align: center;
+        font-family:"Calistoga";
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .about_why ul{
+        margin-left: 25px;
+        font-family: "Average";
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .about_why_card span{
+        font-family: "Averia Serif Libre";
+        font-weight:500;
+    }
+    .package_home p{
+        display: none;
+    }
+    .booking_home h1{
+        font-size: 50px;
+    }
+    .booking_home p{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    .nav_link ul{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .drop_down{
+        display: block;
+    }
+    .home{
+        height: 400px;
+    }
+    .home_content h2{
+        font-size: 20px;
+        line-height: 15px;
+        font-weight:200;
+    }
+    .home_content h1{
+        font-size: 48px;
+        line-height: 15px;
+        font-weight:300;
+    }
+    .home_content h4{
+        font-size: 10px;
+        line-height: 15px;
+        font-weight:150;
+    }
+    .services{
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 10px;
+        
+    }
+    .services h2{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .about{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .about img{
+        height: 300px;
+        width: 300px;
+        padding-left: 5%;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .about_text{
+        padding-top: 0px;
+        height: auto;
+    }
+    .about_text h2{
+        font-size: 26px;
+        text-align: center;
+    }
+    .about_text h3{
+        text-align: center;
+        font-size: 16px;
+    }
+    .about_text button{
+        width: auto;
+        font-size: 15px;
+        height: auto;
+        margin-left: 38%;
+        margin-right: 38%;
+        padding: 5px;
+    }
+    .package{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .package h1{
+        font-size: 20px;
+    }
+    .package_cards{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .package_card{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .see_more{
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .see_more button{
+        font-family:"kreon";
+        font-size: 20px;
+        border-radius: 1000px;
+        border: none;
+        height: 53px;
+        width: 120px;
+        background-color: #00A9FF;
+    }
+    .footer{
+        height: auto;
+        padding-top: 10px;
+        padding-bottom:20px ;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .link h2{
+        font-size:16px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 0px;
+
+    }
+    .link ul{
+         font-size: 12px;
+         text-align: center;
+    }
+    
+    .link_list i{
+        margin-right: 0px;
+    } 
+    .copyright p{
+        font-size: 15px;
+    }
+    .about_more_header{
+        height: 100hv;
+    }
+    .about_title h2{
+        font-size: 60px;
+        font-weight:300;
+    }
+    .mvt_card{
+        height:auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .mvt_card img{
+        height: 60px;
+        width: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .mvt_card h2{
+        padding-top: 10px;
+        font-size: 25px;
+    }
+    .mvt_card p{
+        font-size: 16px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mvt_cards{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        
+    }
+    .about_image_circle{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .about_image_circle img{
+        width: 250px;
+        height: 250px;
+    }
+    .about_why{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10%;
+        padding-left: 10%;
+        
+    }
+    .about_why_card{
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        border:5px solid #00A9FF;
+        border-radius: 40px 16px;
+    }
+    .about_why_card h1{
+        text-align: center;
+        font-family:"Calistoga";
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .about_why ul{
+        margin-left: 25px;
+        font-family: "Average";
+        line-height: 28px;
+        font-size: 12px;
+    }
+    .about_why_card span{
+        font-family: "Averia Serif Libre";
+        font-weight:500;
+    }
+    .booking_home h1{
+        font-size: 60px;
+    }
+    
+}
+
