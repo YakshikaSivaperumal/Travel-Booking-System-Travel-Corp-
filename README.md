@@ -10,8 +10,8 @@ A simple **travel booking system** built with **HTML, CSS, and PHP** that allows
 - ⚡ PHP & MySQL integration for backend  
 
 ## 📹 Demo Video
+[▶️ Watch Demo](travelcorp%20(1).mp4)
 
-[▶️ Watch Demo](travelcorp (1).mp4)
 
 ## 🛠️ Installation & Setup
 
